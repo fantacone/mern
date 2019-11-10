@@ -1,0 +1,4 @@
+{
+  "mongoURI":
+    "mongodb+srv://portela123:portela123@clusterdev-r23qf.mongodb.net/test?retryWrites=true&w=majority"
+}
