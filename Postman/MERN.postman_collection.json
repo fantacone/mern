@@ -1,19 +1,17 @@
 {
 	"info": {
-		"_postman_id": "010c9ca5-2b40-4712-a08d-285dc2eda2eb",
+		"_postman_id": "8af89fdc-b41b-44b4-bfc1-4bc65c451b61",
 		"name": "MERN",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "Posts",
-			"item": [],
-			"protocolProfileBehavior": {}
+			"item": []
 		},
 		{
 			"name": "Profiles",
-			"item": [],
-			"protocolProfileBehavior": {}
+			"item": []
 		},
 		{
 			"name": "Users & Auth",
@@ -59,6 +57,10 @@
 								"type": "text"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://localhost:5000/api/auth",
 							"protocol": "http",
@@ -103,10 +105,39 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get Logged in users Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRjZTljODA2ZTk5ZjcwMzg0MGY0YjI0In0sImlhdCI6MTU3NDM3NDM4NSwiZXhwIjoxNTc0NzM0Mzg1fQ.2_nuhiTGeR4A2xAjZOGYEkdygB4vViiSmYj7oqmTB24",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/profile/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"me"
+							]
+						}
+					},
+					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
