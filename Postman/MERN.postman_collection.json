@@ -1,17 +1,57 @@
 {
 	"info": {
-		"_postman_id": "8af89fdc-b41b-44b4-bfc1-4bc65c451b61",
+		"_postman_id": "27a40508-3213-4ba9-8c29-7419ce6269c7",
 		"name": "MERN",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "Posts",
-			"item": []
+			"item": [],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Profiles",
-			"item": []
+			"item": [
+				{
+					"name": "Creante And Update Profiles",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRjZTljODA2ZTk5ZjcwMzg0MGY0YjI0In0sImlhdCI6MTU3NDU1OTkxMCwiZXhwIjoxNTc0OTE5OTEwfQ.bMuJQW5vv8uHFROA70RZQGq5cVLFhfOBwaDBAWm2Kqw",
+								"description": "Luciano Token",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "Json Content Type",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"company\": \"Nextel\",\n\t\"status\": \"Developer\",\n\t\"website\": \"http://www.lucianoportela.com\",\n\t\"skills\": \"HTML, CSS,PHP,Python\",\n\t\"location\": \"Sao Paulo, SP\",\n\t\"bio\": \"I am a good student of Node.js\",\n\t\"githubusername\": \"fantacone\",\n\t\"twitter\": \"https://twitter.com/fantacone\",\n\t\"facebook\": \"https://facebook.com/fantacone\",\n\t\"youtube\": \"https://youtube.com/fantacone\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Users & Auth",
@@ -57,10 +97,6 @@
 								"type": "text"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "http://localhost:5000/api/auth",
 							"protocol": "http",
@@ -117,10 +153,6 @@
 								"type": "text"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "http://localhost:5000/api/profile/me",
 							"protocol": "http",
@@ -137,7 +169,9 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
