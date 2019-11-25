@@ -1,14 +1,13 @@
 {
 	"info": {
-		"_postman_id": "27a40508-3213-4ba9-8c29-7419ce6269c7",
+		"_postman_id": "a3bbb0c4-a597-4540-ac4c-c9a79107ddd5",
 		"name": "MERN",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "Posts",
-			"item": [],
-			"protocolProfileBehavior": {}
+			"item": []
 		},
 		{
 			"name": "Profiles",
@@ -49,9 +48,89 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get logged in profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRjZTljODA2ZTk5ZjcwMzg0MGY0YjI0In0sImlhdCI6MTU3NDM3NDM4NSwiZXhwIjoxNTc0NzM0Mzg1fQ.2_nuhiTGeR4A2xAjZOGYEkdygB4vViiSmYj7oqmTB24",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/profile/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Profiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Profile User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/profile/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Users & Auth",
@@ -97,6 +176,10 @@
 								"type": "text"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://localhost:5000/api/auth",
 							"protocol": "http",
@@ -141,37 +224,8 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "Get Logged in users Profile",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-auth-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRjZTljODA2ZTk5ZjcwMzg0MGY0YjI0In0sImlhdCI6MTU3NDM3NDM4NSwiZXhwIjoxNTc0NzM0Mzg1fQ.2_nuhiTGeR4A2xAjZOGYEkdygB4vViiSmYj7oqmTB24",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:5000/api/profile/me",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"profile",
-								"me"
-							]
-						}
-					},
-					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
