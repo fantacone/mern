@@ -19,7 +19,7 @@
 						"header": [
 							{
 								"key": "x-auth-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRjZTljODA2ZTk5ZjcwMzg0MGY0YjI0In0sImlhdCI6MTU3NDU1OTkxMCwiZXhwIjoxNTc0OTE5OTEwfQ.bMuJQW5vv8uHFROA70RZQGq5cVLFhfOBwaDBAWm2Kqw",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRkZDliZmZiZDBiMGYwNWU0NzMxYTgwIn0sImlhdCI6MTU3NDgwNDQ3OSwiZXhwIjoxNTc1MTY0NDc5fQ.pjIdEoGQ0hjlZt1Wi8L74CUm6RPNkR62GV_UptYW4Xs",
 								"description": "Luciano Token",
 								"type": "text"
 							},
@@ -32,7 +32,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"company\": \"Nextel\",\n\t\"status\": \"Developer\",\n\t\"website\": \"http://www.lucianoportela.com\",\n\t\"skills\": \"HTML, CSS,PHP,Python\",\n\t\"location\": \"Sao Paulo, SP\",\n\t\"bio\": \"I am a good student of Node.js\",\n\t\"githubusername\": \"fantacone\",\n\t\"twitter\": \"https://twitter.com/fantacone\",\n\t\"facebook\": \"https://facebook.com/fantacone\",\n\t\"youtube\": \"https://youtube.com/fantacone\"\n}"
+							"raw": "{\n\t\"company\": \"Test Company\",\n\t\"status\": \"Developer\",\n\t\"website\": \"http://www.newsite.com\",\n\t\"skills\": \"HTML, JAVA,PHP,Python\",\n\t\"location\": \"Sao Caetano do Sul, SP\",\n\t\"bio\": \"I am a another good student of Node.js\",\n\t\"githubusername\": \"steve2\",\n\t\"twitter\": \"https://twitter.com/steve2\",\n\t\"facebook\": \"https://facebook.com/steve2\",\n\t\"youtube\": \"https://youtube.com/steve2\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:5000/api/profile",
@@ -129,6 +129,36 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Delete Profile & User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRkZDliZmZiZDBiMGYwNWU0NzMxYTgwIn0sImlhdCI6MTU3NDgwNDQ3OSwiZXhwIjoxNTc1MTY0NDc5fQ.pjIdEoGQ0hjlZt1Wi8L74CUm6RPNkR62GV_UptYW4Xs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -148,7 +178,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Luciano Portela\",\n\t\"email\": \"lucianofantacone@hotmail.com\",\n\t\"password\": \"123456\"\n}"
+							"raw": "{\n\t\"name\": \"Steve Smith\",\n\t\"email\": \"steve@gmail.com\",\n\t\"password\": \"123456\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:5000/api/users",
@@ -208,7 +238,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"email\": \"lucianofantacone@hotmail.com\",\n\t\"password\": \"123456\"\n}"
+							"raw": "{\n\t\"email\": \"steve@gmail.com\",\n\t\"password\": \"123456\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:5000/api/auth",
