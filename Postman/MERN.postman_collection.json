@@ -159,6 +159,42 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Create Experience",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRjZTljODA2ZTk5ZjcwMzg0MGY0YjI0In0sImlhdCI6MTU3NDg5NDkxNywiZXhwIjoxNTc1MjU0OTE3fQ.5uAnx3iEPSFkRse6ubTkUvKfu0Zar8o8-g9C-wFA2H4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Instructor & Senior Developer\",\n\t\"company\": \"Portela Media\",\n\t\"location\": \"Sao Paulo, SP\",\n\t\"from\": \"8-10-2010\",\n\t\"current\": true,\n\t\"description\": \"Create courses and projects on Web Development\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/profile/experience",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"experience"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
