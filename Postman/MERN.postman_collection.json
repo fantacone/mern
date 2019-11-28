@@ -161,7 +161,7 @@
 					"response": []
 				},
 				{
-					"name": "Create Experience",
+					"name": "Add Experience",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -191,6 +191,44 @@
 								"api",
 								"profile",
 								"experience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Profile Experience",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRjZTljODA2ZTk5ZjcwMzg0MGY0YjI0In0sImlhdCI6MTU3NDk4MDc4MSwiZXhwIjoxNTc1MzQwNzgxfQ.1vwaixwoA0KO6ofKgV7kOhwT7iMsitORTjlBNyOGCEw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/profile/experience/5de04c9112fda133e077ca97",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"experience",
+								"5de04c9112fda133e077ca97"
 							]
 						}
 					},
