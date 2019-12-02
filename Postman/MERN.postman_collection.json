@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a3bbb0c4-a597-4540-ac4c-c9a79107ddd5",
+		"_postman_id": "d7cce783-5ae7-4aab-a93b-147ac4b5930c",
 		"name": "MERN",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -197,7 +197,43 @@
 					"response": []
 				},
 				{
-					"name": "Delete Profile Experience",
+					"name": "Add Education",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-auth-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRjZTljODA2ZTk5ZjcwMzg0MGY0YjI0In0sImlhdCI6MTU3NDg5NDkxNywiZXhwIjoxNTc1MjU0OTE3fQ.5uAnx3iEPSFkRse6ubTkUvKfu0Zar8o8-g9C-wFA2H4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"school\": \"Test School\",\n\t\"degree\": \"Associates Degree\",\n\t\"fieldofstudy\": \"Computer Science\",\n\t\"from\": \"8-2-2003\",\n\t\"to\": \"3-4-2005\",\n\t\"description\": \"Got Associates in comuputer science\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/profile/education",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Experience",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -229,6 +265,44 @@
 								"profile",
 								"experience",
 								"5de04c9112fda133e077ca97"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Education",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "x-auth-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWRjZTljODA2ZTk5ZjcwMzg0MGY0YjI0In0sImlhdCI6MTU3NDk4MDc4MSwiZXhwIjoxNTc1MzQwNzgxfQ.1vwaixwoA0KO6ofKgV7kOhwT7iMsitORTjlBNyOGCEw"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/profile/education/5de4793f45f1fb0a141eda07",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"education",
+								"5de4793f45f1fb0a141eda07"
 							]
 						}
 					},
