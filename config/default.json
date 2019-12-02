@@ -1,5 +1,6 @@
 {
-  "mongoURI":
-    "mongodb+srv://portela123:portela123@clusterdev-r23qf.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtToken": "mysecrettoken"
+  "mongoURI": "mongodb+srv://portela123:portela123@clusterdev-r23qf.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtToken": "mysecrettoken",
+  "githubClientId": "732125da85438a0a77c1",
+  "githubSecret": "19de975f466287c0216c00eb41909034e1bf03c1"
 }
